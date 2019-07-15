@@ -1,0 +1,23 @@
+<h2>Choose the currency</h2>
+
+<span>{{fromCurrencyDisplay}} </span>
+
+<select (change)="setFromValue($event.target.value)">
+  <option *ngFor="let currency of currencyList | keyvalue" [value]="currency.key" [selected]="currency.key == 'INR'">{{currency.key}}</option>
+</select>
+
+<span> = </span>
+
+<span>{{toCurrencyDisplay}} </span>
+
+<select (change)="setToValue($event.target.value)">
+  <option *ngFor="let currency of currencyList | keyvalue" [value]="currency.key" [selected]="currency.key == 'INR'">{{currency.key}}</option>
+</select>
+
+<br><br>
+
+<button (click)="getTrends()">Get Trends</button>
+
+<br><br>
+
+<p-chart type="line" [data]="chartData" width="95vw" height="28vw"></p-chart>
