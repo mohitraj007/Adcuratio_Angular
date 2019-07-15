@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CurrencyService } from './service/currency.service';
-import { temporaryDeclaration } from '@angular/compiler/src/compiler_util/expression_converter';
 
 @Component({
   selector: 'app-currency',
@@ -92,10 +91,3 @@ export class CurrencyComponent implements OnInit {
     this.currencyService.getData(fetchTrendsUrl).subscribe((trendsData: any) => this.loadTrendsData(trendsData));
   }
 }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
