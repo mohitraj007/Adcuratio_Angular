@@ -1,3 +1,3 @@
-# angular-u67e8f
+# Simple Currency Converter
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-u67e8f)
+https://mohitraj007.github.io/Currency_Converter
